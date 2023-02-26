@@ -99,3 +99,39 @@
 #     line = input()
 #     result = split_and_join(line)
 #     print(result)
+
+# name = 'Jayssika'
+# print(len(name))
+
+# name = "jau\"me"
+# print(name) #jau"me 
+
+# num1 = 2+3j;
+# num2 = complex(2, 3)
+
+# print(num2.real, num2.imag)
+
+# abs(-5.5) #5.5
+# round(5.5) #6
+# round(5.55, 1) #5.5
+
+
+# from enum import Enum
+# class State(Enum):
+#   INACTIVE = 0
+#   ACTIVE = 1 
+
+# print(State.ACTIVE.value) #1 
+def count_substring(string, sub_string):
+    a = 0
+    for i in range(len(string)):
+        if sub_string == string[i:len(sub_string)+i]:
+            a+=1
+    return a
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
