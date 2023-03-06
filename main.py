@@ -121,17 +121,86 @@
 #   INACTIVE = 0
 #   ACTIVE = 1 
 
-# print(State.ACTIVE.value) #1 
-def count_substring(string, sub_string):
-    a = 0
-    for i in range(len(string)):
-        if sub_string == string[i:len(sub_string)+i]:
-            a+=1
-    return a
+# print(State.ACTIVE.value) #1
 
-if __name__ == '__main__':
-    string = input().strip()
-    sub_string = input().strip()
+# hakkerrank find a string
+# def count_substring(string, sub_string):
+#     a = 0
+#     for i in range(len(string)):
+#         if sub_string == string[i:len(sub_string)+i]:
+#             a+=1
+#     return a
+
+# if __name__ == '__main__':
+#     string = input().strip()
+#     sub_string = input().strip()
     
-    count = count_substring(string, sub_string)
-    print(count)
+#     count = count_substring(string, sub_string)
+#     print(count)
+# if __name__ == '__main__':
+#     s = input()
+    
+#     isalpha_false = 0
+#     for i in range(len(s)):
+      
+#       if s[i].isalnum() == True:
+#           isalpha_false +=1
+#     if isalpha_false > 0:
+#       print(True)
+#     else:
+#       print(False)
+      
+#     isalpha_false = 0  
+#     for i in range(len(s)):
+      
+#       if s[i].isalpha() == True:
+#           isalpha_false +=1
+#     if isalpha_false > 0:
+#       print(True)
+#     else:
+#       print(False)
+#     isalpha_false = 0  
+#     for i in range(len(s)):
+      
+#       if s[i].isdigit() == True:
+#           isalpha_false +=1
+#     if isalpha_false > 0:
+#       print(True)
+#     else:
+#       print(False)
+      
+#     isalpha_false = 0  
+#     for i in range(len(s)):
+     
+#       if s[i].islower() == True:
+#           isalpha_false +=1
+#     if isalpha_false > 0:
+#       print(True)
+#     else:
+#       print(False)
+#     isalpha_false = 0
+
+  
+#     for i in range(len(s)):
+#       if s[i].isupper() == True:
+#           isalpha_false +=1
+#     if isalpha_false > 0:
+#       print(True)
+#     else:
+#       print(False)
+
+
+
+# import textwrap
+
+# def wrap(string, max_width):
+#     for i in range(0,len(string)+1,max_width):
+#         result = string[i:i+max_width]
+#         if len(result) == max_width:
+#             print(result)
+#         else:
+#             return(result)
+# if __name__ == '__main__':
+#     string, max_width = input(), int(input())
+#     result = wrap(string, max_width)
+#     print(result)
