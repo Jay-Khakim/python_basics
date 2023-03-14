@@ -209,7 +209,45 @@
 
 # Modules: 
 # import dog
-from dog import bark
+# # from dog import bark
+# from lib.dog import bark
+# # dog.bark()
+# bark()
 
-# dog.bark()
-bark()
+
+# lambda num : num * 2 
+
+
+number = [1, 2, 4]
+
+# def double(a):
+#   return a*2
+
+# # result = map(double, number)
+# result = map(lambda a  : a*2, number)
+# print(list(result))
+
+# def isEven(a):
+#   return a%2 == 0
+# result = filter(isEven, number)
+
+# print(list(result))
+
+# from functools import reduce 
+
+# expences = [
+#   ("james", 100),
+#   ("Makes", 1000)
+# ]
+
+# sum = reduce( lambda a, b: a[1]+b[1], expences)
+# print(sum)
+
+def factorial(n):
+  if n==1: return 1
+  return n*factorial(n-1)
+
+
+print(factorial(4))
+print(factorial(5))
+print(factorial(3))
